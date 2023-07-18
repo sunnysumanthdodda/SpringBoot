@@ -1,6 +1,6 @@
-package com.example.learnspringboot.course.controller;
+package com.example.springboot.course.controller;
 
-import com.example.learnspringboot.course.bean.Course;
+import com.example.springboot.course.bean.Course;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

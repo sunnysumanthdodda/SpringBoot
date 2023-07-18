@@ -1,4 +1,4 @@
-package com.example.learnspringboot.course.bean;
+package com.example.springboot.course.bean;
 
 public class Course {
     private int courseId;
