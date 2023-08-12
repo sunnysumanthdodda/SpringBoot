@@ -2,7 +2,6 @@ package com.example.learnspringboot.course.controller;
 
 import com.example.learnspringboot.course.bean.Course;
 import com.example.learnspringboot.course.repository.CourseRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,8 +10,11 @@ import java.util.Optional;
 @RestController
 public class CourseController {
 
-    @Autowired
-    private CourseRepository repository;
+    private final CourseRepository repository;
+
+    public CourseController(CourseRepository repository){
+        this.repository = repository;
+    }
 
     @GetMapping("/courses")
     public List<Course> getAllCourses(){
